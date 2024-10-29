@@ -53,6 +53,7 @@
     font-size: 6rem;
     margin: 0;
     transition: 0.5s;
+    text-align: center;
 }
 
 .hero-section h1:hover {
@@ -224,3 +225,6 @@
 }
 
 
+@media only screen and (max-width: 27.5rem) {
+
+}
