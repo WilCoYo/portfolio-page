@@ -75,7 +75,19 @@ const Home = () => {
     })
   }, [])
 
+  const [innerHeight, setInnerHeight] = useState(window.innerHeight);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setInnerHeight(window.innerHeight);
+    };
+
+    window.addEventListener('resive', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [])
 
 
 
