@@ -5,14 +5,12 @@ const Home = () => {
   const [text, setText] = useState('');
   const currentPhraseIndex = useRef(0);
   const timeoutRef = useRef(null);
+  const phrasesRef = useRef(["Web Developer", "Full-Stack Engineer", "Software Engineer"]);
   
-  const phrases = ["Web Developer", "Full-Stack Engineer", "Software Engineer"];
   const typeSpeed = 100;
   const eraseSpeed = 100;
   const delayAfterType = 1500;
   const delayAfterErase = 500;
-
-
 
   useEffect(() => {
     let mounted = true;
@@ -24,7 +22,7 @@ const Home = () => {
     const typePhrase = async () => {
       if (!mounted) return;
 
-      const currentPhrase = phrases[currentPhraseIndex.current];
+      const currentPhrase = phrasesRef.current[currentPhraseIndex.current];
 
       // Type the phrase
       for (let i = 0; i <= currentPhrase.length; i++) {
@@ -45,7 +43,7 @@ const Home = () => {
       await sleep(delayAfterErase);
 
       // Move to next phrase
-      currentPhraseIndex.current = (currentPhraseIndex.current + 1) % phrases.length;
+      currentPhraseIndex.current = (currentPhraseIndex.current + 1) % phrasesRef.current.length;
       
       // Continue the loop
       if (mounted) {
@@ -62,7 +60,7 @@ const Home = () => {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, []); 
+  }, []);
 
   useEffect(()=>{
     NET({
