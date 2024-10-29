@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Div100vh from 'react-div-100vh';
 import NET from 'vanta/src/vanta.net'
 
 const Home = () => {
