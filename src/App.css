@@ -1,6 +1,6 @@
                                                         /* Navigation Buttons */
 .btns {
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
 
     display: flex;
@@ -81,6 +81,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -97,8 +98,9 @@
 .about-section {
     height: 100vh;
     width: 100%;
-   
+    overflow: hidden;
 }
+
 
 .about {
     width: 30%;

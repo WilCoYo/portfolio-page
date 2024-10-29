@@ -80,7 +80,7 @@ const Home = () => {
 
 
   return (
-    <Div100vh className="hero-section" id="vanta">
+    <div className="hero-section" id="vanta">
       <h4>Hi, my name is</h4>
       <h1 id='name'>Cody Yonkin</h1>
       <h4>
@@ -88,7 +88,7 @@ const Home = () => {
         <span className="cursor">|</span>
       </h4>
      
-    </Div100vh>
+    </div>
   );
 };
 
