@@ -100,9 +100,9 @@
 
 
 .about-section {
-    /* height: 100vh;
+    height: 100vh;
     height: 100dvh;
-    overflow: hidden; */
+    overflow: hidden;
     width: 100%;
 }
 
@@ -140,9 +140,9 @@
 
 
 .experience-section {
-    /* overflow: hidden;
+    overflow: hidden;
     height: 100vh;
-    height: 100dvh; */
+    height: 100dvh;
     width: 100%;
 
     display: grid;
@@ -249,6 +249,9 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+
+        height: unset;
+        overflow: visible;
         
         padding-bottom: 8rem;
         width: 80%;
@@ -269,6 +272,9 @@
     .experience-section {
         grid-template-columns: 1fr;
         gap: 0;
+
+        height: unset;
+        overflow: visible;
     }
     
    .experience-column-left {
