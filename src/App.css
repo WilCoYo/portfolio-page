@@ -166,8 +166,9 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
+    padding-bottom: 20rem;
 }
 
 .skills-title {
@@ -227,4 +228,68 @@
 
 @media only screen and (max-width: 27.5rem) {
 
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+       
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+        width: 80%;
+        position: unset;
+        top: auto;
+        left: auto;
+    }
+    
+    .selfie {
+        width: 80%;
+    }
+
+    .about-paragraph {
+        transform: translate(0);
+    }
+
+
+    .experience-section {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+   .experience-column-left {
+        display: none;
+   }
+
+   .experience-column-right {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: start;
+   }
+
+   .experience-column-right h2 {
+    margin: 0;
+   }
+
+   .experience-column-right h4 {
+    text-indent: .5rem;
+   }
+
+   .cell {
+        padding-top: 0;
+        padding-bottom: 1rem;
+        margin: 0;
+   }
+
+
+
+   
 }
+
+

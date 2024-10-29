@@ -64,7 +64,7 @@ import WAVES from 'vanta/src/vanta.waves'
 
           <div className='experience-column-right column'>
 
-          <ul className='codeNinjas'>
+          <ul className='codeNinjas cell'>
               <h2>Code Ninjas</h2>
               <h4>Code Instructor</h4>
               <li>Guided learners to aid understanding and knowledge of technology and coding concepts</li>
@@ -73,17 +73,16 @@ import WAVES from 'vanta/src/vanta.waves'
               <li>Leveraged educator background to inspire learners’ confidence in technology, math, and science</li>
           </ul>
 
-          <ul className='apple'>
+          <ul className='apple cell'>
               <h2>Apple</h2>
               <h4>Technical Expert</h4>
               <li>Interpreted customer concerns and delivered appropriate product diagnoses and solutions</li>
               <li>Flexibly rotated through multiple technical specialties and skill sets with ease and confidence</li>
               <li>Translated technical knowledge via Apple iOS hardware and software technician certification</li>
               <li>Troubleshot device issues with customers and communicated appropriate solutions</li>
-              <li>Trained new employees on software and hardware troubleshooting and company values</li>
             </ul>
 
-            <ul className='PICS'>
+            <ul className='PICS cell'>
               <h2>PICS ITECH</h2>
               <h4>Client Account Manager</h4>
               <li>Managed CRM account data and quickly resolved service tickets queue for 60+ clients</li>
