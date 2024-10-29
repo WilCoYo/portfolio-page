@@ -1,0 +1,226 @@
+                                                        /* Navigation Buttons */
+.btns {
+    position: absolute;
+    bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3rem;
+    width: 100%;
+    z-index: 50;
+}
+
+.btn {
+    width: 7rem;
+    padding: 2rem .5rem;
+    font-size: 1rem;
+    
+    border: none;
+    color: #fff;
+       /* other styles */
+       background: rgba(39, 39, 39, 0.1);
+       backdrop-filter: blur(10px);
+        /* fallback for old browsers */
+       -webkit-backdrop-filter: blur(60px);
+       border: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.btn:hover {
+    scale: 1.1;
+    cursor: pointer;
+    border: 2px solid #f83c7e4d;
+    z-index: 5;
+}
+ 
+ 
+ 
+ /* Home Section */
+
+.cursor {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.hero-section h1 {
+    color:#CAD194;
+    font-size: 6rem;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.hero-section h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    cursor: default;
+}
+
+.hero-section h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.hero-section h4:hover {
+    -webkit-text-stroke: .5px #fff;
+    color: transparent;
+    cursor: default;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* *{
+    outline: 1px red solid;
+} */
+
+
+
+                                            /* About Section */
+
+
+.about-section {
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.about {
+    width: 30%;
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+}
+
+.selfie {
+    width: 80%;
+    
+}
+
+.about-paragraph {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+
+    /* other styles */
+    background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(30px);
+     /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transform: translate(-10%);
+}
+
+
+
+                                            /* Experience Section */
+
+
+.experience-section {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    color: #fff;
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+}
+
+.experience-section h4 {
+    margin: 0;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+
+
+.column {
+    padding-left: 3rem;
+    padding-bottom: 20rem;
+}
+
+
+.experience-column-left {
+    grid-column-start: 0;
+    grid-column-start: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.tech-stack {
+    display: flex;
+    padding: 2.5rem;
+}
+
+
+.experience-column-left ul {
+    list-style: none;
+}
+
+
+
+
+.experience-column-right {
+    grid-column-start: 1;
+    grid-column-start: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.codecademy {
+    width: 100%;
+}
+
+.codecademy-logo {
+    width: 20%;
+    padding-bottom: 1rem;
+}
+
+.americorps {
+    width: 100%;
+}
+
+.cityyear-logo {
+    width: 10%;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.NCCC-logo {
+    width: 9%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
