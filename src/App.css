@@ -250,6 +250,7 @@
         justify-content: start;
         align-items: center;
         
+        padding-bottom: 8rem;
         width: 80%;
         position: unset;
         top: auto;
@@ -296,9 +297,7 @@
    }
 
 
-   .desktop {
-    display: none;
-   }
+ 
    
 }
 
