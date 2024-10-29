@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Div100vh from 'react-div-100vh';
 import NET from 'vanta/src/vanta.net'
 
 const Home = () => {
@@ -75,24 +76,11 @@ const Home = () => {
     })
   }, [])
 
-  const [innerHeight, setInnerHeight] = useState(window.innerHeight);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setInnerHeight(window.innerHeight);
-    };
-
-    window.addEventListener('resive', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, [])
 
 
 
   return (
-    <div className="hero-section" id="vanta">
+    <Div100vh className="hero-section" id="vanta">
       <h4>Hi, my name is</h4>
       <h1 id='name'>Cody Yonkin</h1>
       <h4>
@@ -100,7 +88,7 @@ const Home = () => {
         <span className="cursor">|</span>
       </h4>
      
-    </div>
+    </Div100vh>
   );
 };
 
