@@ -32,6 +32,8 @@ const About = () => {
             outcomes.
             <br></br>
             <br></br>
+            </p>
+            <p className='about-paragraph desktop'>
             My commitment to continuous learning, highlighted by my completion of Codeacademy certifications, 
             enables me to stay at the forefront of ever-changing technology. By leveraging my diverse experiences in 
             team settings and project management, I champion collaboration and teamwork, combining my passion for 

@@ -115,7 +115,7 @@
 }
 
 .selfie {
-    width: 80%;
+    width: 65%;
     
 }
 
@@ -131,7 +131,7 @@
      /* fallback for old browsers */
     -webkit-backdrop-filter: blur(60px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    transform: translate(-10%);
+    transform: translate(-19%);
 }
 
 
@@ -296,7 +296,9 @@
    }
 
 
-
+   .desktop {
+    display: none;
+   }
    
 }
 
