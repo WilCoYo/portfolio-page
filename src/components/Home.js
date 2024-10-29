@@ -3,7 +3,6 @@ import NET from 'vanta/src/vanta.net'
 
 const Home = () => {
   const [text, setText] = useState('');
-  const [isTyping, setIsTyping] = useState(true);
   const currentPhraseIndex = useRef(0);
   const timeoutRef = useRef(null);
   
