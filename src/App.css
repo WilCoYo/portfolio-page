@@ -241,6 +241,9 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+
+        height: unset;
+        overflow: visible;
        
     }
 
@@ -250,8 +253,7 @@
         justify-content: start;
         align-items: center;
 
-        height: unset;
-        overflow: visible;
+        
         
         padding-bottom: 8rem;
         width: 80%;
