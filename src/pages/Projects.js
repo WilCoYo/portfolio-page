@@ -21,7 +21,7 @@ const Projects = () => {
 
     return (
         <div className='projects-section' id='vanta'>
-
+          
         </div>
     );
 }
