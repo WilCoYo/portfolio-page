@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import NET from 'vanta/src/vanta.net'
+import React, { useEffect, useRef, useState } from 'react'
+import TOPOLOGY from 'vanta/src/vanta.topology'
+
 
 const Home = () => {
   const [text, setText] = useState('');
@@ -62,8 +63,9 @@ const Home = () => {
     };
   }, []);
 
+
   useEffect(()=>{
-    NET({
+    TOPOLOGY({
       el: "#vanta",
       mouseControls: true,
       touchControls: true,

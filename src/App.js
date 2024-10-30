@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
-import Home from './components/Home'
-import About from './components/About'
+import Home from './pages/Home'
+import About from './pages/About'
 import NavigationButtons from './components/NavigationButtons'
-import Experience from './components/Experience'
+import Experience from './pages/Experience'
+import Projects from './pages/Projects'
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
 
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
 
 
             <Route path="*" element={<Navigate to="/" replace />} />

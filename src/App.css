@@ -30,13 +30,13 @@
 .btn:hover {
     scale: 1.1;
     cursor: pointer;
-    border: 2px solid #f83c7e4d;
+    border: 2px solid #899651;
     z-index: 5;
 }
  
  
  
- /* Home Section */
+                                                            /* Home Section */
 
 .cursor {
     animation: blink 1s infinite;
@@ -104,19 +104,22 @@
     height: 100dvh;
     overflow: hidden;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 
 .about {
-    width: 30%;
-    position: absolute;
-    top: 2rem;
-    left: 15rem;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
 }
 
 .selfie {
     width: 65%;
-    
+    align-self: center;
 }
 
 .about-paragraph {
@@ -131,7 +134,7 @@
      /* fallback for old browsers */
     -webkit-backdrop-filter: blur(60px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-    transform: translate(-19%);
+   
 }
 
 
@@ -168,15 +171,16 @@
 }
 
 
-.experience-column-left {
-    grid-column-start: 0;
+.experience-column-right {
     grid-column-start: 1;
+    grid-column-start: 2;
     
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: end;
+    padding: 1rem 5rem 20rem 1rem;
     
-    padding-bottom: 20rem;
 }
 
 .skills-title {
@@ -186,30 +190,33 @@
 
 .tech-stack {
     display: flex;
-    padding: 2.5rem;
+    justify-content: end;
 }
 
 
-.experience-column-left ul {
+.experience-column-right ul {
     list-style: none;
+    text-align: end;
 }
 
 
 
 
-.experience-column-right {
+.experience-column-left {
+    grid-column-start: 0;
     grid-column-start: 1;
-    grid-column-start: 2;
+    
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: start;
+    padding: 1rem;
+
 }
 
 
 .codecademy {
-    width: 100%;
+    max-width: 100%;
 }
 
 .codecademy-logo {
@@ -218,7 +225,7 @@
 }
 
 .americorps {
-    width: 100%;
+    max-width: 100%;
 }
 
 .cityyear-logo {
@@ -232,6 +239,20 @@
     margin-top: 1rem;
     padding-bottom: 1rem;
 }
+
+
+
+                                                /* Projects Section */
+
+
+.projects-section {
+    overflow: hidden;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+}
+
+
 
 
 @media only screen and (max-width: 27.5rem) {

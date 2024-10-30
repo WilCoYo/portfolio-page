@@ -1,21 +1,24 @@
 import React, { useEffect } from 'react';
-import RINGS from 'vanta/src/vanta.rings'
+import WAVES from 'vanta/src/vanta.waves'
 
 
 const About = () => {
 
-    useEffect(()=>{
-        RINGS({
-          el: "#vanta",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00
-        })
-      }, [])
+  useEffect(()=>{
+    WAVES({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x032222
+    })
+  }, [])
+
+    
     
     
     
@@ -30,10 +33,6 @@ const About = () => {
             By inspiring learners with coding knowledge, empowering users through accessible tech solutions, and fostering 
             clear communication between clients and technical teams, I aim to create connections that lead to positive 
             outcomes.
-            <br></br>
-            <br></br>
-            </p>
-            <p className='about-paragraph'>
             My commitment to continuous learning, highlighted by my completion of Codeacademy certifications, 
             enables me to stay at the forefront of ever-changing technology. By leveraging my diverse experiences in 
             team settings and project management, I champion collaboration and teamwork, combining my passion for 
