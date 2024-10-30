@@ -301,7 +301,7 @@
     }
     
    .experience-column-right {
-        
+        display: none;
    }
 
    .experience-column-left {
