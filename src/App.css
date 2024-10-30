@@ -296,7 +296,7 @@
         grid-template-columns: 1fr;
         gap: 0;
 
-        min-height: 100dvh;
+        height: unset;
         overflow: visible;
     }
     
