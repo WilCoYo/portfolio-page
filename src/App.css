@@ -273,7 +273,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
-
+        max-width: 80%;
         
         
         padding-bottom: 8rem;
@@ -296,26 +296,26 @@
         grid-template-columns: 1fr;
         gap: 0;
 
-        height: unset;
+        min-height: 100dvh;
         overflow: visible;
     }
     
-   .experience-column-left {
+   .experience-column-right {
         display: none;
    }
 
-   .experience-column-right {
+   .experience-column-left {
         width: 100%;
         padding: 1rem 0 8rem 0;
         margin: 0;
         justify-content: start;
    }
 
-   .experience-column-right h2 {
+   .experience-column-left h2 {
     margin: 0;
    }
 
-   .experience-column-right h4 {
+   .experience-column-left h4 {
     text-indent: .5rem;
    }
 
