@@ -70,6 +70,7 @@ const NavigationButtons = () => {
             </button>
             <a 
                 href='/Yonkin, Cody W. Resume.pdf'
+                target='_blank'
                 download
             >
                 <button 
