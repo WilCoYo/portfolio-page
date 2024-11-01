@@ -434,6 +434,7 @@
 .projects-section {
     height: unset;
     overflow: visible;
+    
 }
 
 
@@ -445,7 +446,8 @@
     
     height: 100%;
     width: 90%;
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
  
 
 
