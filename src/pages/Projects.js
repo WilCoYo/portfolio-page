@@ -25,7 +25,7 @@ const Projects = () => {
 
             <div className='project'>
               <div className='project-image'>
-                <img src='/hi-fi-logo.png' />
+                <img src='/hi-fi-logo.png' alt='logo of Hi-Fi Wine and Spirits'/>
                 <p>An artisan Wine & Spirits company.</p>
 
                 <div class="project-tech-stack">
@@ -52,7 +52,7 @@ const Projects = () => {
             <div className='project'>
               <div className='project-image'>
               <div className='project-image'>
-                <img src='/yoga-studio-logo.png' />
+                <img src='/yoga-studio-logo.png' alt="Dock going in lake" />
                 <p>A San Francisco-based Yoga Studio</p>
 
                 <div class="project-tech-stack">
