@@ -29,7 +29,48 @@ import NET from 'vanta/src/vanta.net'
 
       return (
         <div className='experience-section' id='vanta'>
-            <div className='experience-column-left column'>
+          <div className='experience-section-bg'>
+
+            <div className='tech-stack-certs'>
+
+              <div className='certs'>
+
+                <ul className='codecademy'>
+                  <img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" />
+                  <li>Full-Stack Engineer Professional certification</li>
+                  <li>Front End Engineer Professional certification</li>
+                </ul>
+
+                <ul className='americorps'>
+                  <img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" />
+                  <img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
+                  <li>Americorps National Civilian Corps (NCCC)</li>
+                  <li>AmeriCorps City Year, Chicago</li>
+                </ul>
+              </div>
+              
+              <div className='tech-stack'> 
+                <section>
+                <h4 className='skills-title'>Skills</h4>
+                <p>
+                  <strong>Proficient:</strong> HTML, CSS, JavaScript, VSCode, React, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
+                  PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva 
+                  <br></br>
+                  <br></br>
+                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity
+                </p>
+                </section>
+              </div>
+
+            
+            
+            
+          </div>
+
+
+
+
+            <div className='work-experience'>
 
               <ul className='codeNinjas cell'>
                   <h2>Code Ninjas</h2>
@@ -62,49 +103,9 @@ import NET from 'vanta/src/vanta.net'
             </div>
 
 
-          <div className='experience-column-right column'>
-            
-            <div className='tech-stack'>
-              
-              <section>
-              <h4 className='skills-title'>Skills</h4>
-              <p>
-                <strong>Proficient:</strong> HTML, CSS, JavaScript, VSCode, React, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
-                PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva 
-                <br></br>
-                <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity
-              </p>
-              </section>
-             
-
-              
-            </div>
-
-
-
-
-            
-            <ul className='codecademy'>
-              <img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" />
-              <li>Full-Stack Engineer Professional certification</li>
-              <li>Front End Engineer Professional certification</li>
-            </ul>
-
-            <ul className='americorps'>
-              <img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" />
-              <img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
-              <li>Americorps National Civilian Corps (NCCC)</li>
-              <li>AmeriCorps City Year, Chicago</li>
-            </ul>
-
-
-            
-          
-            
+         
 
           </div>
-
-        
         </div>
         
       )

@@ -32,7 +32,7 @@ const About = () => {
             As a full-stack engineer, I strive to spread positive energy through my work in technology and education. 
             By inspiring learners with coding knowledge, empowering users through accessible tech solutions, and fostering 
             clear communication between clients and technical teams, I aim to create connections that lead to positive 
-            outcomes.<br></br>
+            outcomes.<br></br><br></br>
             My commitment to continuous learning, highlighted by my completion of Codeacademy certifications, 
             enables me to stay at the forefront of ever-changing technology. By leveraging my diverse experiences in 
             team settings and project management, I champion collaboration and teamwork, combining my passion for 
