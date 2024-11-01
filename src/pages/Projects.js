@@ -3,55 +3,21 @@ import GLOBE from 'vanta/src/vanta.globe'
 
 const Projects = () => {
 
-  useEffect(() => {
-
-    const container = document.getElementById('vanta');
-    container.style.height = '100vh';
-
-    const effect = VANTA.GLOBE({
-      el: "#vanta",
-      height: window.innerHeight,
-      heightAuto: false,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x899651,
-      backgroundColor: 0x032222
-    })
-
-
-    const handleResize = () => {
-      effect.resize()
-    }
-    window.addEventListener('resize', handleResize)
-
-      return () => {
-        effect.destroy()
-        window.removeEventListener('resize', handleResize)
-      }
-  }, [])
-
-
-
-
-    // useEffect(()=>{
-    //     GLOBE({
-    //       el: "#vanta",
-    //       mouseControls: true,
-    //       touchControls: true,
-    //       gyroControls: false,
-    //       minHeight: 200.00,
-    //       minWidth: 200.00,
-    //       scale: 1.00,
-    //       scaleMobile: 1.00,
-    //       color: 0x899651,
-    //       backgroundColor: 0x032222
-    //     })
-    //   }, [])
+  
+    useEffect(()=>{
+        GLOBE({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x899651,
+          backgroundColor: 0x032222
+        })
+      }, [])
 
 
     return (
