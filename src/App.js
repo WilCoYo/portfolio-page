@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <Router>
     <NavigationButtons />
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="" element={<Navigate to="/" replace />} />
@@ -24,6 +26,7 @@ const App = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
+    
   </Router>
       
   );

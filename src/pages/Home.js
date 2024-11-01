@@ -67,8 +67,8 @@ const Home = () => {
   useEffect(()=>{
     TOPOLOGY({
       el: "#vanta",
-      mouseControls: true,
-      touchControls: true,
+      mouseControls: false,
+      touchControls: false,
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
