@@ -115,8 +115,8 @@
 
 
 .about-section {
-    /* height: 100vh; */
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -345,6 +345,8 @@
     cursor: pointer;
 }
 
+                                        /* iPad media queries */
+
 @media only screen and (max-width: 68rem) and (min-width: 27.5rem) {
 .about-section {
     display: flex;
@@ -399,6 +401,8 @@
 }
 
 
+                                            /* iPhone media queries */
+
 @media only screen and (max-width: 27rem) {
 
 .btns {
@@ -416,15 +420,15 @@
                                                 /* About Section */
 
 .about-section {
-    justify-content: start;
+    justify-content: center;
     height: unset;
    
 }
 
 .about {
-    padding-bottom: 2rem;
+    max-width: 80%;
+ 
 }
-
 
 .selfie {
     width: 80%;

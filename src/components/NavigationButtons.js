@@ -42,11 +42,11 @@ const NavigationButtons = () => {
                 className='btn btn5'
                 >
 
-<a 
+                <a 
                 href='/Yonkin, Cody W. Resume.pdf'
                 target='_blank'
                 download
-            >
+                >
                 <p 
                 id='resume-word'
                 >
