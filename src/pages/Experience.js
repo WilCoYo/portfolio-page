@@ -36,14 +36,14 @@ import NET from 'vanta/src/vanta.net'
               <div className='certs'>
 
                 <ul className='codecademy'>
-                  <img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" />
+                  <a href='https://www.codecademy.com/profiles/WilCoYo' target='_blank'><img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" /></a>
                   <li>Full-Stack Engineer Professional certification</li>
                   <li>Front End Engineer Professional certification</li>
                 </ul>
 
                 <ul className='americorps'>
-                  <img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" />
-                  <img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
+                  <a href='https://www.cityyear.org/' target='_blank'><img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" /></a>
+                  <a href='https://americorps.gov/serve/americorps/americorps-nccc' target='_blank'><img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" /></a>
                   <li>Americorps National Civilian Corps (NCCC)</li>
                   <li>AmeriCorps City Year, Chicago</li>
                 </ul>
@@ -54,10 +54,10 @@ import NET from 'vanta/src/vanta.net'
                 <h4 className='skills-title'>Skills</h4>
                 <p>
                   <strong>Proficient:</strong> HTML, CSS, JavaScript, VSCode, React, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
-                  PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva 
+                  PgAdmin 4, Postbird, Postman, Figma, Netlify 
                   <br></br>
                   <br></br>
-                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity
+                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity, Canva
                 </p>
                 </section>
               </div>
