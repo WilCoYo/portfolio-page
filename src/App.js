@@ -1,5 +1,4 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
