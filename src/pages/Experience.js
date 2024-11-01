@@ -36,14 +36,14 @@ import NET from 'vanta/src/vanta.net'
               <div className='certs'>
 
                 <ul className='codecademy'>
-                  <a href='https://www.codecademy.com/profiles/WilCoYo' target='_blank'><img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" /></a>
+                  <a href='https://www.codecademy.com/profiles/WilCoYo' target='_blank' rel="noreferrer"><img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" /></a>
                   <li>Full-Stack Engineer Professional certification</li>
                   <li>Front End Engineer Professional certification</li>
                 </ul>
 
                 <ul className='americorps'>
-                  <a href='https://www.cityyear.org/' target='_blank'><img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" /></a>
-                  <a href='https://americorps.gov/serve/americorps/americorps-nccc' target='_blank'><img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" /></a>
+                  <a href='https://www.cityyear.org/' target='_blank' rel="noreferrer"><img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" /></a>
+                  <a href='https://americorps.gov/serve/americorps/americorps-nccc' target='_blank' rel="noreferrer"><img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" /></a>
                   <li>Americorps National Civilian Corps (NCCC)</li>
                   <li>AmeriCorps City Year, Chicago</li>
                 </ul>
