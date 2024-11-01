@@ -283,7 +283,7 @@
     align-items: center;
     
     overflow: hidden;
-    /* height: 100vh; */
+    height: 100vh;
     height: 100dvh;
     width: 100%;
 
