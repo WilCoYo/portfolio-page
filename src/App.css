@@ -115,6 +115,7 @@
     display: flex;
     flex-direction: column;
     align-content: start;
+    padding-top: 1rem;
 }
 
 .selfie {
@@ -171,36 +172,6 @@
 }
 
 
-.experience-column-right {
-    grid-column-start: 1;
-    grid-column-start: 2;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: end;
-    padding: 1rem 5rem 20rem 1rem;
-    
-}
-
-.skills-title {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.tech-stack {
-    display: flex;
-    justify-content: end;
-}
-
-
-.experience-column-right ul {
-    list-style: none;
-    text-align: end;
-}
-
-
-
 
 .experience-column-left {
     grid-column-start: 0;
@@ -220,7 +191,7 @@
 }
 
 .codecademy-logo {
-    width: 20%;
+    width: 10rem;
     padding-bottom: 1rem;
 }
 
@@ -229,16 +200,45 @@
 }
 
 .cityyear-logo {
-    width: 10%;
+    width: 6rem;
     margin-right: 2rem;
     padding-bottom: 1rem;
 }
 
 .NCCC-logo {
-    width: 9%;
+    width: 5.5rem;
     margin-top: 1rem;
     padding-bottom: 1rem;
 }
+
+.experience-column-right {
+    grid-column-start: 1;
+    grid-column-start: 2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    padding: 1rem 5rem 20rem 1rem;
+    
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.tech-stack {
+    display: flex;
+    padding-left: 2.5rem;
+}
+
+
+.experience-column-right ul {
+    list-style: none;
+    text-align: start;
+}
+
 
 
 
@@ -246,9 +246,68 @@
 
 
 .projects-section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     overflow: hidden;
     height: 100vh;
     height: 100dvh;
+    width: 100%;
+
+   
+}
+
+
+.projects {
+    display: flex;
+    justify-content: center; /*change to space-around when adding more projects */
+    align-items: center;
+
+
+
+    width: 60%;
+    height: 70%;
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.project {
+    width: 25%;
+    height: 60%;
+    padding: 1rem;
+
+    margin: 1rem; /* not necessary after more projects are added and .projects' is changed to space-around */
+
+    color: #fff;
+    text-align: center;
+
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 50%;
+    
+
+
+       
+}
+
+
+.project-image img {
     width: 100%;
 }
 
@@ -257,82 +316,128 @@
 
 @media only screen and (max-width: 27.5rem) {
 
-    .btns {
-        bottom: 0;
+.btns {
+    bottom: 0;
+
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    height: unset;
+    overflow: visible;
     
-    }
+}
 
-    .about-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-
-        height: unset;
-        overflow: visible;
-       
-    }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        max-width: 80%;
-        
-        
-        padding-bottom: 8rem;
-        width: 80%;
-        position: unset;
-        top: auto;
-        left: auto;
-    }
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 80%;
     
-    .selfie {
-        width: 80%;
-    }
-
-    .about-paragraph {
-        transform: translate(0);
-    }
-
-
-    .experience-section {
-        grid-template-columns: 1fr;
-        gap: 0;
-
-        height: unset;
-        overflow: visible;
-    }
     
-   .experience-column-right {
-        display: none;
-   }
+    padding-bottom: 8rem;
+    width: 80%;
+    position: unset;
+    top: auto;
+    left: auto;
+}
 
-   .experience-column-left {
-        width: 100%;
-        padding: 1rem 0 8rem 0;
-        margin: 0;
-        justify-content: start;
-        gap: 1rem;
-   }
+.selfie {
+    width: 80%;
+}
 
-   .experience-column-left h2 {
+.about-paragraph {
+    transform: translate(0);
+}
+
+
+.experience-section {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    height: unset;
+    overflow: visible;
+}
+
+.experience-column-right {
+    display: none;
+}
+
+.experience-column-left {
+    width: 100%;
+    padding: 1rem 0 8rem 0;
     margin: 0;
-   }
+    justify-content: start;
+    gap: 1rem;
+}
 
-   .experience-column-left h4 {
-    text-indent: .5rem;
-   }
+.experience-column-left h2 {
+margin: 0;
+}
 
-   .cell {
-        padding-top: 0;
-        padding-bottom: 1rem;
-        margin: 0;
-   }
+.experience-column-left h4 {
+text-indent: .5rem;
+}
+
+.cell {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.projects-section {
+    overflow: visible;
+}
 
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+    
+    height: 100%;
+    width: 90%;
+    padding-bottom: 6rem;
  
+
+   
+    
+
+    /* other styles */
+    background: none;
+    backdrop-filter: none;
+    /* fallback for old browsers */
+    -webkit-backdrop-filter: blur(60px);
+    border: none;
+}
+
+
+.project {
+    width: 75%;
+    height: 40%;
+    margin: 0;
+
+    color: #fff;
+    text-align: center;
+
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-image {
+    height: 100%;
+}
    
 }
 
