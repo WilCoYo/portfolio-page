@@ -336,8 +336,8 @@
 }
 
 .experience-section-bg {
+    padding: 0 1rem 1rem 1rem;
     margin: 1rem auto;
-    
 }
 
 .projects {
@@ -346,17 +346,19 @@
     height: 90%;
 
 
-     /* other styles */
-     background: rgba(39, 39, 39, 0.1);
-     backdrop-filter: blur(30px);
-      /* fallback for old browsers */
-     -webkit-backdrop-filter: blur(60px);
-     border: 2px solid rgba(255, 255, 255, 0.1);
+    
 }
 
 .project {
     width: 60%;
     height: 40%;
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 2px solid rgba(255, 255, 255, 0);
 }
 
 }
