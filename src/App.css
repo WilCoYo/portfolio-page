@@ -126,7 +126,7 @@
 .about-paragraph {
     color: #fff;
     padding: 1rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     border: none;
 
     /* other styles */
@@ -145,8 +145,8 @@
 
 .experience-section {
     overflow: hidden;
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     width: 100%;
 
     display: grid;
@@ -262,7 +262,7 @@
 
 .projects {
     display: flex;
-    justify-content: center; /*change to space-around when adding more projects */
+    justify-content: space-evenly; 
     align-items: center;
 
 
@@ -283,7 +283,6 @@
     height: 60%;
     padding: 1rem;
 
-    margin: 1rem; /* not necessary after more projects are added and .projects' is changed to space-around */
 
     color: #fff;
     text-align: center;
@@ -297,18 +296,21 @@
      border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+
 .project-image {
     width: 100%;
-    height: 50%;
-    
-
-
-       
+    height: 50%;    
 }
 
 
 .project-image img {
     width: 100%;
+}
+
+.project-image img:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
 
 
@@ -391,6 +393,7 @@ text-indent: .5rem;
 }
 
 .projects-section {
+    height: unset;
     overflow: visible;
 }
 
