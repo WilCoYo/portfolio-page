@@ -14,7 +14,7 @@
 
 .btn {
     width: 7rem;
-    padding: 1.5rem .5rem;
+    padding: 1rem .5rem;
     font-size: 1rem;
     
     border: none;
@@ -35,9 +35,19 @@
     z-index: 5;
 }
 
-.btn:hover {
+.btn a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
 
 }
+
+
+#resume-word{
+    margin: 0;
+    text-decoration: none;
+}
+
 
 
  
@@ -393,6 +403,13 @@
 
 .btns {
     bottom: 0;
+
+}
+
+.btn a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
 
 }
 
