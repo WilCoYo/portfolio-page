@@ -267,6 +267,7 @@
 
     width: 60%;
     height: 70%;
+
      /* other styles */
      background: rgba(39, 39, 39, 0.1);
      backdrop-filter: blur(30px);
@@ -337,6 +338,25 @@
 .experience-section-bg {
     margin: 1rem auto;
     
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.project {
+    width: 50%;
+    height: 40%;
 }
 
 }
