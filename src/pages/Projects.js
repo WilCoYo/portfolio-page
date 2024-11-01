@@ -28,7 +28,7 @@ const Projects = () => {
             <div className='project'>
               
               <div className='project-image'>
-                <a href='https://hi-fi-wineandspirits.netlify.app' target='_blank'>
+                <a href='https://hi-fi-wineandspirits.netlify.app' target='_blank' rel="noreferrer">
                 <img src='/hi-fi-logo.png' alt='logo of Hi-Fi Wine and Spirits'/>
                 </a>
                 <p>An artisan Wine & Spirits company.</p>
@@ -59,7 +59,7 @@ const Projects = () => {
             <div className='project'>
               
               <div className='project-image'>
-                <a href='https://wilcoyogastudio.netlify.app' target='_blank'>
+                <a href='https://wilcoyogastudio.netlify.app' target='_blank' rel="noreferrer">
                 <img src='/yoga-studio-logo.png' alt="Dock going in lake" />
                 </a>
                 <p>A San Francisco-based Yoga Studio</p>
