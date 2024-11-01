@@ -311,7 +311,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 65rem) {
+@media only screen and (max-width: 68rem) and (min-width: 27.5rem) {
 .about-section {
     display: flex;
     flex-direction: column;
@@ -329,7 +329,6 @@
     
     
     padding-bottom: 8rem;
-    width: 80%;
     position: unset;
     top: auto;
     left: auto;
