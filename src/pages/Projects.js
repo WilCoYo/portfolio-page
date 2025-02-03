@@ -97,7 +97,7 @@ const Projects = () => {
             <div className='project'>
               
               <div className='project-image'>
-                <a href='https://wilco-weather-app.netlify.app' target='_blank' rel="noreferrer">
+                <a href='https://anime-rate.netlify.app/' target='_blank' rel="noreferrer">
                 <img src='/AniRate-Project.png' alt="Scared boy with words 'AniRate overtop" />
                 </a>
               </div>
