@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import TOPOLOGY from 'vanta/src/vanta.topology'
+
+import './Home.css';
 
 
 const Home = () => {
@@ -64,24 +65,12 @@ const Home = () => {
   }, []);
 
 
-  useEffect(()=>{
-    TOPOLOGY({
-      el: "#vanta",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00
-    })
-  }, [])
-
+ 
 
 
 
   return (
-    <div className="hero-section" id="vanta">
+    <div className="hero-section">
       <h4>Hi, my name is</h4>
       <h1 id='name'>Cody Yonkin</h1>
       <h4>

@@ -1,22 +1,10 @@
-import React, { useEffect } from 'react';
-import GLOBE from 'vanta/src/vanta.globe'
+import './Projects.css';
+import yoga_studio from '../../assets/images/yoga-studio-logo.png'
+import hi_fi from '../../assets/images/hi-fi-logo.png'
 
 const Projects = () => {
 
-    useEffect(()=>{
-        GLOBE({
-          el: "#vanta",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x899651,
-          backgroundColor: 0x032222
-        })
-      }, [])
+
 
 
     return (
@@ -29,11 +17,11 @@ const Projects = () => {
               
               <div className='project-image'>
                 <a href='https://hi-fi-wineandspirits.netlify.app' target='_blank' rel="noreferrer">
-                <img src='/hi-fi-logo.png' alt='logo of Hi-Fi Wine and Spirits'/>
+                <img src={hi_fi} alt='logo of Hi-Fi Wine and Spirits'/>
                 </a>
                 <p>An artisan Wine & Spirits company.</p>
 
-                <div class="project-tech-stack">
+                <div className="project-tech-stack">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2.25rem" height="2.25rem" viewBox="0 0 48 48">
                       <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
                   </svg>
@@ -60,11 +48,11 @@ const Projects = () => {
               
               <div className='project-image'>
                 <a href='https://wilcoyogastudio.netlify.app' target='_blank' rel="noreferrer">
-                <img src='/yoga-studio-logo.png' alt="Dock going in lake" />
+                <img src={yoga_studio} alt="Dock going in lake" />
                 </a>
                 <p>A San Francisco-based Yoga Studio</p>
 
-                <div class="project-tech-stack">
+                <div className="project-tech-stack">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2.25rem" height="2.25rem" viewBox="0 0 48 48">
                       <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
                   </svg>
