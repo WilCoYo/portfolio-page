@@ -25,7 +25,7 @@ const Projects = () => {
                 <div className="project-tech-stack">
                   <p>
                     <strong>Dependencies & Tech Stack:</strong><br></br>
-                    <i>React, Figma, Git & Github, Javascript, CSS, HTML</i>
+                    <i>React, Firebase, Figma, Git & Github, Javascript, CSS, HTML</i>
                     
                   </p>
                 </div>
