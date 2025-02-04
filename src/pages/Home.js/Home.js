@@ -15,8 +15,7 @@ const Home = () => {
   const delayAfterErase = 500;
 
   useEffect(() => {
-    let mounted = true;
-
+    let mounted = true; 
     const sleep = (ms) => new Promise((resolve) => {
       timeoutRef.current = setTimeout(resolve, ms);
     });

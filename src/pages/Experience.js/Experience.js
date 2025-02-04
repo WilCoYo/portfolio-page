@@ -20,7 +20,7 @@ import nccc_logo from '../../assets/images/NCCC-logo.png'
 
             <div className='tech-stack-certs'>
 
-              <div className='certs'>
+              <div className='certs'> 
 
                 <ul className='codecademy'>
                   <img src={codecademy_logo} className="codecademy-logo" alt="Codecademy Logo" />

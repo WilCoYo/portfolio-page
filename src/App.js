@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
 import Home from './pages/Home.js/Home.js'
@@ -31,24 +31,20 @@ const App = () => {
 
 
   return (
-      <BrowserRouter >
-      
-        <NavigationButtons />
-        <div id="vanta">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="" element={<Navigate to="/" replace />} />
-
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-
-
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </div>  
-      
-      </BrowserRouter>
+    <Router >
+      <div id='vanta'></div>
+    <NavigationButtons />
+    
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="" element={<Navigate to="/" replace />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+    
+  </Router>
       
   );
 };

@@ -49,7 +49,7 @@ const NavigationButtons = () => {
                 >
                 Resume
                 </p>
-                <img src={download_icon} class="download-icon" alt='download icon'/>
+                <img src={download_icon} className="download-icon" alt='download icon'/>
                 </a>
             </button>
         </nav>
