@@ -1,6 +1,8 @@
 import React from 'react';
 import './Experience.css'
-
+import codecademy_logo from '../../assets/images/Codecademy-logo.png'
+import cy_logo from '../../assets/images/Cityyear-logo.png';
+import nccc_logo from '../../assets/images/NCCC-logo.png'
 
 
 
@@ -21,14 +23,14 @@ import './Experience.css'
               <div className='certs'>
 
                 <ul className='codecademy'>
-                  <img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" />
+                  <img src={codecademy_logo} className="codecademy-logo" alt="Codecademy Logo" />
                   <li>Full-Stack Engineer Professional certification</li>
                   <li>Front End Engineer Professional certification</li>
                 </ul>
 
                 <ul className='americorps'>
-                  <img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" />
-                  <img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
+                  <img src={cy_logo} className="cityyear-logo" alt="City Year Logo" />
+                  <img src={nccc_logo} className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
                   <li>Americorps National Civilian Corps (NCCC)</li>
                   <li>AmeriCorps City Year, Chicago</li>
                 </ul>

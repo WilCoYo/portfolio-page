@@ -1,6 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavigationButtons.css';
+import download_icon from '../../assets/images/download_icon.svg'
+import resume from '../../assets/files/Yonkin, Cody W. Resume.pdf'
+
 
 const NavigationButtons = () => {
     const navigate = useNavigate();
@@ -31,11 +34,23 @@ const NavigationButtons = () => {
             >
             Projects
             </button>
-            <button 
-                onClick={() => navigate('/resume')}
-                className='btn btn1'
-            >
-            Resume
+            <button  
+                className='btn btn5'
+                >
+
+                <a 
+                href= {resume}
+                target='_blank'
+                rel="noreferrer"
+                download
+                >
+                <p 
+                id='resume-word'
+                >
+                Resume
+                </p>
+                <img src={download_icon} class="download-icon" alt='download icon'/>
+                </a>
             </button>
         </nav>
     )
