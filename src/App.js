@@ -7,7 +7,7 @@ import NavigationButtons from './components/NavigationButtons.js/NavigationButto
 import Experience from './pages/Experience.js/Experience.js'
 import Projects from './pages/Projects.js/Projects.js'
 
-import TOPOLOGY from 'vanta/src/vanta.topology'
+import NET from 'vanta/src/vanta.net'
 
 
 
@@ -16,15 +16,18 @@ import TOPOLOGY from 'vanta/src/vanta.topology'
 const App = () => {
 
   useEffect(()=>{
-    TOPOLOGY({
+    NET({
       el: "#vanta",
       mouseControls: true,
       touchControls: true,
-      gyroControls: false,
+      gyroControls: true,
       minHeight: 200.00,
       minWidth: 200.00,
       scale: 1.00,
-      scaleMobile: 1.00
+      scaleMobile: 1.00,
+      color: 0x899651,
+      backgroundColor: 0x032222,
+      showDots: false
     })
   }, [])
 
