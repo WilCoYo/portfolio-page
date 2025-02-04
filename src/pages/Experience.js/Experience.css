@@ -1,13 +1,11 @@
 
 
 .experience-section {
-    overflow: hidden;
     
-    height: 100dvh;
-    max-height: 100dvh;
-   
+    position: fixed;
+    height: 100vh; 
     width: 100%;
-    overflow: hidden;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +21,7 @@
     overflow-y: scroll;
     min-height: 50%;
     scrollbar-width: none;
-
+    max-height: 100vh;
 
 
      /* other styles */
@@ -113,14 +111,14 @@
     
         height: unset;
        
-        padding-bottom: 5rem;
+       
        
     }
     
     
     .experience-section-bg {
-        padding: 0 1rem 2rem 1rem;
-        margin: auto ;
+        padding: 0 1rem 5rem 1rem!important;
+        margin: 0 ;
         
     }
     
@@ -151,7 +149,9 @@
     }
     
     
-    
+    .work-experience {
+        padding-bottom: 7rem;
+    }
     
     
     

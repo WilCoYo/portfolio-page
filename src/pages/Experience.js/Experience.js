@@ -15,7 +15,7 @@ import nccc_logo from '../../assets/images/NCCC-logo.png'
     
 
       return (
-        <div className='experience-section' id='vanta'>
+        <div className='experience-section'>
           <div className='experience-section-bg'>
 
             <div className='tech-stack-certs'>
