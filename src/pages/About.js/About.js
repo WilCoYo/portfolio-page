@@ -12,7 +12,7 @@ const About = () => {
     
     
       return (
-        <div className="about-section" id="vanta">
+        <div className="about-section">
           <div className='about'>
             <img src={selfie} className="selfie" alt="Selfie of Cody Yonkin" />
             <p className='about-paragraph'>
