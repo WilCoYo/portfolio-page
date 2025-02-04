@@ -1,10 +1,13 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import './App.css'
-import Home from './pages/Home'
-import About from './pages/About'
-import NavigationButtons from './components/NavigationButtons'
-import Experience from './pages/Experience'
-import Projects from './pages/Projects'
+import Home from './pages/Home.js/Home.js'
+import About from './pages/About.js/About.js'
+import NavigationButtons from './components/NavigationButtons.js/NavigationButtons.js'
+import Experience from './pages/Experience.js/Experience.js'
+import Projects from './pages/Projects.js/Projects.js'
+
+import NET from 'vanta/src/vanta.net'
 
 
 
@@ -12,9 +15,27 @@ import Projects from './pages/Projects'
 
 const App = () => {
 
+  useEffect(()=>{
+    NET({
+      el: "#vanta",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x899651,
+      backgroundColor: 0x032222,
+      showDots: false
+    })
+  }, [])
+
+
 
   return (
-    <Router>
+    <Router >
+      <div id='vanta'></div>
     <NavigationButtons />
     
     <Routes>

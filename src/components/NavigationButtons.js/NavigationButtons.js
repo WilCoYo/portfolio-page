@@ -1,50 +1,47 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './NavigationButtons.css';
+import download_icon from '../../assets/images/download_icon.svg'
+import resume from '../../assets/files/Yonkin, Cody W. Resume.pdf'
+
 
 const NavigationButtons = () => {
     const navigate = useNavigate();
 
- 
-  
     return (
         <nav className='btns'>
-
             <button 
                 onClick={() => navigate('/')}
                 className='btn btn1'
             >
             Home
             </button>
-
             <button 
                 onClick={() => navigate('/about')}
-                className='btn btn2'
+                className='btn btn1'
             >
             About
             </button>
-
             <button
                 onClick={() => navigate('/experience')}
-                className='btn btn3'
+                className='btn btn1'
             >
             Experience
             </button>
-
             <button 
                 onClick={() => navigate('/projects')}
-                className='btn btn4'
+                className='btn btn1'
             >
             Projects
             </button>
-
-            
             <button  
                 className='btn btn5'
                 >
 
                 <a 
-                href='/Yonkin, Cody W. Resume.pdf'
+                href= {resume}
                 target='_blank'
+                rel="noreferrer"
                 download
                 >
                 <p 
@@ -52,13 +49,9 @@ const NavigationButtons = () => {
                 >
                 Resume
                 </p>
-                <span class="material-symbols-outlined">
-                download
-                </span>
+                <img src={download_icon} className="download-icon" alt='download icon'/>
                 </a>
             </button>
-            
-
         </nav>
     )
 }

@@ -1,0 +1,160 @@
+
+
+.experience-section {
+    
+    position: fixed;
+    height: 100vh; 
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+   
+
+}
+
+.experience-section-bg {
+    padding: 0 1rem 1rem 1rem;
+    margin: 1rem auto;
+    margin-bottom: 10rem;
+    overflow-y: scroll;
+    min-height: 50%;
+    scrollbar-width: none;
+    max-height: 100vh;
+
+
+     /* other styles */
+     background: rgba(39, 39, 39, 0.1);
+     backdrop-filter: blur(30px);
+      /* fallback for old browsers */
+     -webkit-backdrop-filter: blur(60px);
+     border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+}
+
+.experience-section h4 {
+    margin: 0;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.tech-stack-certs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.certs {
+    display: flex;
+    gap: 2rem;
+}
+
+.codecademy {
+    padding-top: 4.25rem;
+}
+
+.tech-stack {
+    padding-left: 2.5rem;
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+
+
+
+
+.codecademy-logo {
+    width: 10rem;
+    padding-bottom: 1rem;
+}
+
+
+.cityyear-logo {
+    width: 6rem;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.NCCC-logo {
+    width: 5.5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 65rem) {
+
+    .experience-section-bg {
+        padding: 0 1rem 1rem 1rem;
+        margin: 1rem auto;
+        
+    }
+    
+    }
+
+
+@media only screen and (max-width: 27rem) {
+    .experience-section {
+        gap: 0;
+    
+        height: unset;
+       
+       
+       
+    }
+    
+    
+    .experience-section-bg {
+        padding: 0 1rem 5rem 1rem!important;
+        margin: 0 ;
+        
+    }
+    
+    
+    .cell {
+        padding-top: 0;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    
+    .tech-stack-certs {
+        gap: 0;
+        
+    }
+    
+    .certs {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .tech-stack-certs {
+        padding-bottom: 2rem;
+    }
+    
+    .codecademy {
+        padding-top: 1rem;
+    }
+    
+    
+    .work-experience {
+        padding-bottom: 7rem;
+    }
+    
+    
+    
+    
+}
+

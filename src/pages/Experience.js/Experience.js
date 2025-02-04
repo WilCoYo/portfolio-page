@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
-import NET from 'vanta/src/vanta.net'
-
+import React from 'react';
+import './Experience.css'
+import codecademy_logo from '../../assets/images/Codecademy-logo.png'
+import cy_logo from '../../assets/images/Cityyear-logo.png';
+import nccc_logo from '../../assets/images/NCCC-logo.png'
 
 
 
@@ -8,42 +10,27 @@ import NET from 'vanta/src/vanta.net'
 
  const Experience = () => {
 
-  useEffect(()=>{
-    NET({
-      el: "#vanta",
-      mouseControls: false,
-      touchControls: false,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0x899651,
-      backgroundColor: 0x032222,
-      showDots: false
-    })
-  }, [])
 
   
     
 
       return (
-        <div className='experience-section' id='vanta'>
+        <div className='experience-section'>
           <div className='experience-section-bg'>
 
             <div className='tech-stack-certs'>
 
-              <div className='certs'>
+              <div className='certs'> 
 
                 <ul className='codecademy'>
-                  <a href='https://www.codecademy.com/profiles/WilCoYo' target='_blank' rel="noreferrer"><img src="/Codecademy-logo.png" className="codecademy-logo" alt="Codecademy Logo" /></a>
+                  <img src={codecademy_logo} className="codecademy-logo" alt="Codecademy Logo" />
                   <li>Full-Stack Engineer Professional certification</li>
                   <li>Front End Engineer Professional certification</li>
                 </ul>
 
                 <ul className='americorps'>
-                  <a href='https://www.cityyear.org/' target='_blank' rel="noreferrer"><img src="/Cityyear-logo.png" className="cityyear-logo" alt="City Year Logo" /></a>
-                  <a href='https://americorps.gov/serve/americorps/americorps-nccc' target='_blank' rel="noreferrer"><img src="/NCCC-logo.svg" className="NCCC-logo" alt="AmeriCorps NCCC Logo" /></a>
+                  <img src={cy_logo} className="cityyear-logo" alt="City Year Logo" />
+                  <img src={nccc_logo} className="NCCC-logo" alt="AmeriCorps NCCC Logo" />
                   <li>Americorps National Civilian Corps (NCCC)</li>
                   <li>AmeriCorps City Year, Chicago</li>
                 </ul>
@@ -54,10 +41,10 @@ import NET from 'vanta/src/vanta.net'
                 <h4 className='skills-title'>Skills</h4>
                 <p>
                   <strong>Proficient:</strong> HTML, CSS, JavaScript, VSCode, React, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
-                  PgAdmin 4, Postbird, Postman, Figma, Netlify 
+                  PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva 
                   <br></br>
                   <br></br>
-                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity, Canva
+                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity
                 </p>
                 </section>
               </div>
