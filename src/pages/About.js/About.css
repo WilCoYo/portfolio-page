@@ -1,5 +1,5 @@
 .about-section {
-    height: 100dvh; 
+    height: 100vh; 
     width: 100%;
 
     display: flex;
@@ -7,7 +7,7 @@
     align-items: center; 
     overflow: scroll;
     scrollbar-width: none;
-    
+    box-sizing: border-box;
 }
 
 
@@ -18,7 +18,7 @@
     align-items: center;
     padding-top: 1rem;
     margin-bottom: 7rem;
-   
+    box-sizing: border-box;
 }
 
 .selfie {
@@ -27,6 +27,7 @@
     z-index: 15;
 
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .about-paragraph {
@@ -43,18 +44,18 @@
      /* fallback for old browsers */
     -webkit-backdrop-filter: blur(60px);
     border: 2px solid rgba(255, 255, 255, 0.2);
-   
+    box-sizing: border-box;
 }
 
 
 @media only screen and (max-width: 65rem) {
     .about-section {
-       
+        min-height: 100vh;
    
     }
     
     .about {
-        
+        min-height: 100vh;
     }
 }
 

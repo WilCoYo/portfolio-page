@@ -18,19 +18,19 @@ const NavigationButtons = () => {
             </button>
             <button 
                 onClick={() => navigate('/about')}
-                className='btn btn1'
+                className='btn btn2'
             >
             About
             </button>
             <button
                 onClick={() => navigate('/experience')}
-                className='btn btn1'
+                className='btn btn3'
             >
             Experience
             </button>
             <button 
                 onClick={() => navigate('/projects')}
-                className='btn btn1'
+                className='btn btn4'
             >
             Projects
             </button>
