@@ -4,7 +4,7 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     overflow: scroll;
     scrollbar-width: none;
     
@@ -69,6 +69,7 @@
 
     .about {
         padding: 0;
+        margin: 0;
     }
 
   
