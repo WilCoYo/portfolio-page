@@ -20,7 +20,7 @@ const About = () => {
             By inspiring learners with coding knowledge, empowering users through accessible tech solutions, and fostering 
             clear communication between clients and technical teams, I aim to create connections that lead to positive 
             outcomes.<br></br><br></br>
-            My commitment to continuous learning, highlighted by my completion of Codeacademy certifications, 
+            My commitment to continuous learning, highlighted by my completion of Codecademy certifications, 
             enables me to stay at the forefront of ever-changing technology. By leveraging my diverse experiences in 
             team settings and project management, I champion collaboration and teamwork, combining my passion for 
             people and tech. Whether it's writing code, solving a problem, or helping someone, I'm confident my 
