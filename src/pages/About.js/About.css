@@ -1,5 +1,6 @@
 .about-section {
-    height: 100vh; 
+    min-height: 100vh; 
+    height: auto;
     width: 100%;
 
     display: flex;
@@ -12,12 +13,14 @@
 
 
 .about {
+    min-height: auto;
+    height: auto;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    margin-bottom: 7rem;
+    padding-bottom: 2rem;
     box-sizing: border-box;
 }
 
