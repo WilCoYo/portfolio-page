@@ -15,7 +15,8 @@
 .about {
     min-height: auto;
     height: auto;
-
+    width: 100%;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,9 +39,10 @@
     padding: 1rem;
     /* border-radius: 2rem; */
     border: none;
-    margin: 1rem 30%;
-    
-
+    margin: 1rem 0 5rem;
+    max-height: 25rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
     /* other styles */
     background: rgba(39, 39, 39, 0.1);
     backdrop-filter: blur(30px);
