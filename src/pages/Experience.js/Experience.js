@@ -40,11 +40,11 @@ import nccc_logo from '../../assets/images/NCCC-logo.png'
                 <section>
                 <h4 className='skills-title'>Skills</h4>
                 <p>
-                  <strong>Proficient:</strong> HTML, CSS, JavaScript, VSCode, React, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
-                  PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva 
+                  <strong>Proficient:</strong> HTML, CSS, JavaScript, React, MongoDB, Node.js, Express.js, PostgreSQL,<br></br> SQL, Git, GitHub, 
+                  VSCode, PgAdmin 4, Postbird, Postman, Figma, Netlify, Canva, Wix 
                   <br></br>
                   <br></br>
-                  <strong>Knowledgeable: </strong> NoSQL, MongoDB, Railway.app, Docker. Python, C++, Unity
+                  <strong>Knowledgeable: </strong> NoSQL, Railway.app, Docker. Python, C++, Unity
                 </p>
                 </section>
               </div>
