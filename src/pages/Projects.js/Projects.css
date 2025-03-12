@@ -86,6 +86,7 @@
     .projects-section {
         height: unset;
         overflow: visible;
+        width: 100%;
     }
     
     
@@ -96,7 +97,7 @@
         gap: 1rem;
         
         height: 100%;
-        width: 90%;
+        width: 100%;
         padding-top: 1rem;
         padding-bottom: 6rem;
      
@@ -112,7 +113,8 @@
     
     
     .project {
-        width: 75%;
+        width: 100%;
+        max-width: 90%;
         height: 40%;
         margin: 0;
     

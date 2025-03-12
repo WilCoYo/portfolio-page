@@ -10,18 +10,17 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-   
+    overflow-y: scroll;
 
 }
 
 .experience-section-bg {
     padding: 0 1rem 1rem 1rem;
     margin: 1rem auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     overflow-y: scroll;
-    min-height: 50%;
+    height: auto;
     scrollbar-width: none;
-    max-height: 100vh;
 
 
      /* other styles */
@@ -108,8 +107,7 @@
 @media only screen and (max-width: 27rem) {
     .experience-section {
         gap: 0;
-    
-        height: unset;
+        
        
        
        
@@ -117,9 +115,9 @@
     
     
     .experience-section-bg {
-        padding: 0 1rem 5rem 1rem!important;
-        margin: 0 ;
-        
+        padding: 0 1rem 1rem 1rem;
+        margin: .5rem ;
+        height: '';
     }
     
     
@@ -150,7 +148,8 @@
     
     
     .work-experience {
-        padding-bottom: 9rem;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
     }
     
     
