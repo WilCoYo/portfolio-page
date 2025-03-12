@@ -3,7 +3,8 @@ import { useEffect } from 'react'
 import './App.css'
 import Home from './pages/Home.js/Home.js'
 import About from './pages/About.js/About.js'
-import NavigationButtons from './components/NavigationButtons.js/NavigationButtons.js'
+// import NavigationButtons from './components/NavigationButtons.js/NavigationButtons.js'
+import NavBar from './components/NavBar/NavBar.js'
 import Experience from './pages/Experience.js/Experience.js'
 import Projects from './pages/Projects.js/Projects.js'
 
@@ -36,7 +37,7 @@ const App = () => {
   return (
     <Router >
       <div id='vanta'></div>
-    <NavigationButtons />
+    <NavBar />
     
     <Routes>
       <Route path="/" element={<Home />} />

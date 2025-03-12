@@ -10,7 +10,7 @@ const NavigationButtons = () => {
 
     return (
         <nav className='btns'>
-            <button 
+            <button  
                 onClick={() => navigate('/')}
                 className='btn btn1'
             >
