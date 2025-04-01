@@ -1,7 +1,8 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import './NavBar.css'
 import { useNavigate, useLocation } from 'react-router-dom';
-// import resume from '../../assets/files/Yonkin, Cody W. Resume.pdf'
+import resume from '../../assets/files/Resume.pdf'
+import download_icon from '../../assets/images/download-icon.png';
 
 
 
@@ -16,6 +17,8 @@ function NavBar() {
     const projectsRef = useRef(null);
     const btnsRef = useRef(null);
     const indicatorRef = useRef(null);
+
+    const [opacity, setOpacity] = useState('1');
 
     
     const isActive = (route) => {
@@ -89,9 +92,40 @@ const updateIndicatorPosition = () => {
     }
 };
 
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+        const handleScroll = () => {
+            let currentScrollPos = window.pageYOffset;
+            let maxScroll = document.body.scrollHeight - window.innerHeight;
+                //console.log(maxScroll)
+
+            if(currentScrollPos > 0 && currentScrollPos < maxScroll) {
+                setOpacity('0');
+                //console.log(currentScrollPos)
+            } else {
+                setOpacity('1');
+            }
+
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }
+}, [])
+
 
     return (
         <div className='navbar'>
+            <div className='resume-download' style={{ opacity }}>
+                <a href={resume} target='blank' rel='noreferrer' download>
+                    <img src={download_icon} alt='Download Resume'/>
+                </a>
+                <p>Resume</p>
+            </div>
+            
+            
             
                 <div className='btns' ref={btnsRef}>
                     <div className='nav-indicator' ref={indicatorRef}></div>

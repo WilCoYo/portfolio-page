@@ -1,3 +1,33 @@
+.resume-download {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-download img {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.resume-download img:hover {
+    transform: scale(1.1);
+}
+
+.resume-download p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -121,5 +151,25 @@
 
     .nav-indicator {
         height: calc(100% - .75rem);
+    }
+
+    .resume-download {
+        
+        top: 1rem;
+        right: 1rem;
+           /* other styles */
+        background: rgba(39, 39, 39, 0.1);
+        backdrop-filter: blur(30px);
+        /* fallback for old browsers */
+        -webkit-backdrop-filter: blur(60px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        padding: .8rem;
+        border-radius: 2rem;
+        transition: opacity 0.3s ease;
+    }
+
+    .resume-download img {
+        width: 2rem;
     }
 }
